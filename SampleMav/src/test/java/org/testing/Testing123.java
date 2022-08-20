@@ -11,6 +11,7 @@ import java.util.List;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.CloseAction;
 
 import org.utilities.BaseClass;
+import org.utilities.SignInPagePojo;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -36,6 +37,9 @@ public class Testing123 extends BaseClass {
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(getData(0, 1, 0));
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(getData(0, 1, 1));
 	    scrnshot("naukri");
+	    
+	    
+	   
 		
 		
 		closeTab();
