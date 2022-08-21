@@ -30,7 +30,7 @@ public class Testing123 extends BaseClass {
 		chromeObject();
 		winMax();
 		implicitWaiting();
-		launchUrl("https://my.naukri.com/account/register/basicdetails");
+		launchUrl("https://www.toolstation.com/");
 		getTitleAndUrl();
 		
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys(getData(0, 1, 2));

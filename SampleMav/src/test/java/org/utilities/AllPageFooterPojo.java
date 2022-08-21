@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AllPageFooterPojo extends AllPageHeaderPojo {
-	
-	//pagafactory
+
+	// pagafactory
 	public AllPageFooterPojo() {
 		PageFactory.initElements(driver, this);
 	}
-    
-	//footer locators
+
+	// footer locators
 	@FindBy(xpath = "//img[@src='https://s3.amazonaws.com/ts-website-content/tsuk/apple-store-badge.svg']")
 	private WebElement AppleAppStore;
 
@@ -60,8 +60,8 @@ public class AllPageFooterPojo extends AllPageHeaderPojo {
 
 	@FindBy(xpath = "(//a[@title='Request a catalogue'])")
 	private WebElement requestACatalogue;
-    
-	//getters
+
+	// getters
 	public WebElement getAppleAppStore() {
 		return AppleAppStore;
 	}

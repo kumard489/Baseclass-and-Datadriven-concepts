@@ -7,13 +7,13 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class AllPageHeaderPojo extends BaseClass {
-    
-	//pagafactory
+
+	// pagafactory
 	public AllPageHeaderPojo() {
 		PageFactory.initElements(driver, this);
 	}
 
-	//header locators
+	// header locators
 	@FindBy(xpath = "(//img[@alt='Toolstation'])[1]")
 	private WebElement homepageHeader;
 

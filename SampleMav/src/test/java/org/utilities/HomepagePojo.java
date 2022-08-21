@@ -15,13 +15,35 @@ public class HomepagePojo extends AllPageFooterPojo {
 	}
 
 	// homepage locators
+	
+	// our top sellers
 	@FindBy(xpath = "(//a[@class='product-suggestion '])[6]")
 	private WebElement firstProduct;
-	
-	
-    //getters
+
+	@FindBy(xpath = "(//a[@class='product-suggestion '])[7]")
+	private WebElement secoundProduct;
+
+	@FindBy(xpath = "(//a[@class='product-suggestion '])[8]")
+	private WebElement thirdProduct;
+
+	@FindBy(xpath = "(//a[@class='product-suggestion '])[9]")
+	private WebElement fourthProduct;
+
+	// getters
 	public WebElement getFirstProduct() {
 		return firstProduct;
+	}
+
+	public WebElement getSecoundProduct() {
+		return secoundProduct;
+	}
+
+	public WebElement getThirdProduct() {
+		return thirdProduct;
+	}
+
+	public WebElement getFourthProduct() {
+		return fourthProduct;
 	}
 
 }
