@@ -15,7 +15,7 @@ public class HomepagePojo extends AllPageFooterPojo {
 	}
 
 	// homepage locators
-	
+
 	// our top sellers
 	@FindBy(xpath = "(//a[@class='product-suggestion '])[6]")
 	private WebElement firstProduct;

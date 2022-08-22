@@ -613,7 +613,7 @@ public class BaseClass {
 	// 74
 	public static String getCellValueWithDate(String fileName, int sheetIndex, int rowIndex, int cellIndex,
 			String dateFrmt) {
-		File f = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
+		File f = new File("C:\\Users\\shpra\\git\\Baseclass-and-Datadriven-concepts\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
 				+ ".xlsx");
 		String data = "";
 		try {
@@ -740,7 +740,7 @@ public class BaseClass {
 
 	// 78
 	public static String getData(int sheetIndex, int rowIndex, int cellIndex) {
-		String data = getCellValueWithDate("DDExcel", sheetIndex, rowIndex, cellIndex, "dd-MMMM-yyyy");
+		String data = getCellValueWithDate("testdata", sheetIndex, rowIndex, cellIndex, "dd-MMMM-yyyy");
 		return data;
 	}
 	

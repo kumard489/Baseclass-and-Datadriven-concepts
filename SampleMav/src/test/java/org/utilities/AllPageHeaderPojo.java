@@ -13,6 +13,10 @@ public class AllPageHeaderPojo extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
+	// this website uses cookies
+	@FindBy(xpath = "//button[@id='onetrust-accept-btn-handler']")
+	private WebElement acceptAll;
+
 	// header locators
 	@FindBy(xpath = "(//img[@alt='Toolstation'])[1]")
 	private WebElement homepageHeader;
@@ -159,6 +163,10 @@ public class AllPageHeaderPojo extends BaseClass {
 	private WebElement clearance;
 
 	// getters
+	public WebElement getAcceptAll() {
+		return acceptAll;
+	}
+	
 	public WebElement getHomepage() {
 		return homepageHeader;
 	}
