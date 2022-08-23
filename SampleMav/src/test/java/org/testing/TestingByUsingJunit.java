@@ -50,7 +50,7 @@ public class TestingByUsingJunit extends BaseClass {
 		s.getTxtUserName().sendKeys(getData(1, 2, 0));
 		s.getTxtPassword().sendKeys(getData(1, 2, 1));
 		s.getBtnLogin().click();
-        String text = s.getIncorrectLoginDetailsMessage().getText();
+                String text = s.getIncorrectLoginDetailsMessage().getText();
 		Assert.assertTrue("failed", text.startsWith("Incorrect"));
 		System.out.println("tc1 is passed");
 	}
