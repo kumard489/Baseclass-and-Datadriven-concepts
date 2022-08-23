@@ -31,6 +31,9 @@ public class SignInPagePojo extends AllPageFooterPojo {
 
 	@FindBy(xpath = "//a[text()='forgotten password?']")
 	private WebElement forgotPassword;
+	
+	@FindBy(xpath="//li[text()='Incorrect login details']")
+	private WebElement incorrectLoginDetailsMessage;
 
 	// getters
 	public WebElement getTxtUserName() {
@@ -56,5 +59,11 @@ public class SignInPagePojo extends AllPageFooterPojo {
 	public WebElement getForgotPassword() {
 		return forgotPassword;
 	}
+	
+	public WebElement getIncorrectLoginDetailsMessage() {
+		return incorrectLoginDetailsMessage;
+	}
+
+	
 
 }
