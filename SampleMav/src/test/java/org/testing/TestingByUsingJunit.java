@@ -17,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.utilities.BaseClass;
 import org.utilities.HomepagePojo;
 import org.utilities.SignInPagePojo;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestingByUsingJunit extends BaseClass {
